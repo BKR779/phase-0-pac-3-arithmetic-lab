@@ -49,10 +49,10 @@ Go ahead and run `npm test` and take a look at the first failing test:
 
 ```console
   1) basic math functions
-       'add()' is a valid function:
-     ReferenceError: add is not defined
-      at Context.<anonymous> (test/indexTest.js:10:12)
-      at processImmediate (node:internal/timers:464:21)
+		 'add()' is a valid function:
+	  ReferenceError: add is not defined
+		at Context.<anonymous> (test/indexTest.js:10:12)
+		at processImmediate (node:internal/timers:464:21)
 ```
 
 The description of the test, `'add()' is a valid function`, along with the error
@@ -76,12 +76,12 @@ similar to this:
 
 ```js
   1) basic math functions
-       add(a, b) adds two numbers and returns the result:
-     Error: Expected undefined to equal 1078
-      at assert (node_modules/expect/lib/assert.js:29:9)
-      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
-      at Context.<anonymous> (test/indexTest.js:26:23)
-      at processImmediate (node:internal/timers:464:21)
+		 add(a, b) adds two numbers and returns the result:
+	  Error: Expected undefined to equal 1078
+		at assert (node_modules/expect/lib/assert.js:29:9)
+		at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+		at Context.<anonymous> (test/indexTest.js:26:23)
+		at processImmediate (node:internal/timers:464:21)
 ```
 
 > Note: the test document is randomly creating numbers to pass as arguments to
@@ -115,12 +115,12 @@ Running the tests now we get:
 
 ```console
   1) basic math functions
-       add(a, b) adds two numbers and returns the result:
-     Error: Expected 'something' to equal 853
-      at assert (node_modules/expect/lib/assert.js:29:9)
-      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
-      at Context.<anonymous> (test/indexTest.js:26:23)
-      at processImmediate (node:internal/timers:464:21)
+		 add(a, b) adds two numbers and returns the result:
+	  Error: Expected 'something' to equal 853
+		at assert (node_modules/expect/lib/assert.js:29:9)
+		at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+		at Context.<anonymous> (test/indexTest.js:26:23)
+		at processImmediate (node:internal/timers:464:21)
 ```
 
 Great! So now our function is returning "something" instead of nothing! So the
